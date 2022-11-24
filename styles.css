@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+/*============
+GLOBAL SELECTORS
+=========== */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100%;
+    font-family: 'Oswald', sans-serif;
+    background-color: #222831;
+    color:#e0e0e0; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    min-width: 1000px;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%) 1;
+    border-width: 0 1px;
+    border-style: solid;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/*========= 
+HEADER SECTION
+========= */
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background-color: #222831;
+    border-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%) 1;
+    border-width: 10px;
+    border-style: solid;
+    padding: 4rem;
+    animation: 1s linear 0s 1 onLoad;
+    animation-fill-mode: forwards;
+}
+
+header h2 {
+    background: linear-gradient(180deg, #d558c8 0%, #24d292 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    animation: 1s linear 0s 1 h2onLoad;
+    animation-fill-mode: forwards;
+}
+
+
+/*========= 
+NAV STYLING
+=========== */
+nav {
+    background-color: #21262e;
+    padding: .5rem 4rem;
+    color: #e4f1fe;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    -webkit-box-shadow: 0px 6px 38px -7px rgba(33, 38, 46, 1);
+    -moz-box-shadow: 0px 6px 38px -7px rgba(33, 38, 46, 1);
+    box-shadow: 0px 6px 38px -7px rgba(33, 38, 46, 1);
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+ nav ul li {
+    margin: 0 1rem;
+}
+
+.nav-link { 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-img {
+    width: 25px;
+    height: 20px;
+    margin: 0 .7rem;
+}
+
+/*===========
+ABOUT SECTION
+============  */
+
+#about {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#about h2 {
+    color: #24d292;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.greetings {
+    width: 50rem;
+    padding: 1.5rem;
+}
+
+.introduction {
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+#about figure {
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*============ 
+SKILLS SECTION
+============== */
+
+#skills {
+    padding: 4rem;
+}
+
+.grid-skills {
+    width: 30%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.skill {
+    width: 8rem;
+    height: 8rem;
+    transition: transform 1s ease;
+}
+
+.skill img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#skills h2 {
+    text-align: center;
+    color: #24d292;
+    margin-bottom: 8rem;
+
+}
+
+.display-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-skill {
+    width: 50%;
+    border: 1px solid red;
+    text-align: center;
+    padding: 4rem;
+}
+
+.display-skill h3 {
+    font-size: 1.5rem;
+}
+
+
+/*=========== 
+ACTIVE STATES
+=========== */
+
+.skill:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+a:hover {
+    background: linear-gradient(90deg, #d558c8 0%, #24d292 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+/*======= 
+ANIMATIONS
+========== */
+
+@keyframes onLoad {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-80px);
+    }
+}
+
+@keyframes h2onLoad {
+    0% {
+        opacity: 0;
+        transform: translateX(0px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
