@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <title>Portoflio by Lidia Mika</title>
 </head>
+
 <body>
-        <div class="wrapper">
-            <nav>
-                <a href="#header" class="nav-link">Porftolio</a>
-                <ul>
-                    <li><a href="#about" class="nav-link"><img src="assets/icons8-lady-50.png" alt="" class="nav-img"> o mnie</a></li>
-                    <li><a href="#skills" class="nav-link"><img src="assets/icons8-code-file-50.png" alt="" class="nav-img"> skills</a></li>
-                    <li><img src="assets/icons8-project-66.png" alt="" class="nav-img"> projekty</li>
-                    <li><img src="assets/icons8-mail-50.png" alt="" class="nav-img"> kontakt</li>
-                </ul>
-            </nav>
+    <div class="wrapper">
+        <nav>
+            <a href="#header" class="nav-link">Porftolio</a>
+            <ul>
+                <li><a href="#about" class="nav-link"><img src="assets/icons8-lady-50.png" alt="" class="nav-img"> o
+                        mnie</a></li>
+                <li><a href="#skills" class="nav-link"><img src="assets/icons8-code-file-50.png" alt="" class="nav-img">
+                        skills</a></li>
+                <li><img src="assets/icons8-project-66.png" alt="" class="nav-img"> projekty</li>
+                <li><img src="assets/icons8-mail-50.png" alt="" class="nav-img"> kontakt</li>
+            </ul>
+        </nav>
         <header id="header">
             <h1>Porfolio
                 <br>by:
                 <br>Lidia Mika
             </h1>
-            <h2>    Junior
+            <h2> Junior
                 <br>Web Developer
             </h2>
         </header>
         <main>
             <section id="about">
 
-                <div class="greetings">
-                <h2>Cześć!</h2>
-                <p class="introduction">Mam na imię Lidia i od 3 miesięcy uczę się web developmentu. Przed waszymi oczami jest prototyp mojego portfolio,
-                     który mam zamiar ulepszać i dodawać nowe funkcjonalności wraz z rozwojem moich umiejętności. 
-                     Nie czuje, że rymuje. Pozatym gram na basie albo przynajmniej grałam kiedyś, <del>teraz trochę mniej</del>. Nauka gry uzbroiła mnie w 
-                     cierpliwość, która niewątpliwie przydaje mi się w nauce programowania.
-                     Mój numer buta to 37 jakby ktoś był ciekawy albo chciał mi kupić buty. Nie wiem co tu jeszcze napisać, żeby zapełnić miejsce.
-                </p>
-                <p class="introduction">Moim celem jest zdobywanie nowych umiejętności. Aktualnie uczę się JavaScript, żeby w końcu przejść do Reacta. Póki co kończę projekty,
-                     które zaczęłamw vanilla JS. W planach mam także poszperać trochę w backendzie. Z bardziej przyziemnych marzeń to chciałabym w najbliższym czasie zbudować swoją
-                    własną customową klawiaturę mechaniczną taką żeby miała fajne kolorki i wydawała fajny dźwięk klikania.
-                </p>
+                <div class="greetings" data-aos="fade-down-right" data-aos-duration="1000">
+                    <h2>Cześć!</h2>
+                    <p class="introduction">Mam na imię Lidia i od 3 miesięcy uczę się web developmentu. Przed waszymi
+                        oczami jest prototyp mojego portfolio,
+                        który mam zamiar ulepszać i dodawać nowe funkcjonalności wraz z rozwojem moich umiejętności.
+                        Nie czuje, że rymuje. Pozatym gram na basie albo przynajmniej grałam kiedyś, <del>teraz trochę
+                            mniej</del>. Nauka gry uzbroiła mnie w
+                        cierpliwość, która niewątpliwie przydaje mi się w nauce programowania.
+                        Mój numer buta to 37 jakby ktoś był ciekawy albo chciał mi kupić buty. Nie wiem co tu jeszcze
+                        napisać, żeby zapełnić miejsce.
+                    </p>
+                    <p class="introduction">Moim celem jest zdobywanie nowych umiejętności. Aktualnie uczę się
+                        JavaScript, żeby w końcu przejść do Reacta. Póki co kończę projekty,
+                        które zaczęłamw vanilla JS. W planach mam także poszperać trochę w backendzie. Z bardziej
+                        przyziemnych marzeń to chciałabym w najbliższym czasie zbudować swoją
+                        własną customową klawiaturę mechaniczną taką żeby miała fajne kolorki i wydawała fajny dźwięk
+                        klikania.
+                    </p>
                 </div>
-                <figure>
-                <img class="avatar" src="assets/avataaars.svg" alt="moj avatar taki troche nieudany">
-                <figcaption>To nie ja</figcaption>
+                <figure data-aos="fade-down-left" data-aos-duration="1000">
+                    <img class="avatar" src="assets/avataaars.svg" alt="moj avatar taki troche nieudany">
+                    <figcaption>To nie ja</figcaption>
                 </figure>
             </section>
             <section id="skills">
@@ -58,10 +69,12 @@
                     <div class="grid-skills">
                         <div class="skill html"><img src="assets/html-5-logo-svgrepo-com.svg" alt="html5 logo"></div>
                         <div class="skill css"><img src="assets/CSS3_logo.svg.png" alt="css logo"></div>
-                        <div class="skill javascript"><img src="assets/800px-JavaScript-logo.png" alt="javascript logo"></div>
+                        <div class="skill javascript"><img src="assets/800px-JavaScript-logo.png" alt="javascript logo">
+                        </div>
                         <div class="skill git"><img src="assets/Git-icon-black.svg.png" alt="git logo"></div>
                         <div class="skill react"><img src="assets/React-icon.svg.png" alt="react logo"></div>
-                        <div class="skill english"><img src="assets/Square_Flag_of_the_United_Kingdom.svg" alt="union jack"></div>
+                        <div class="skill english"><img src="assets/Square_Flag_of_the_United_Kingdom.svg"
+                                alt="union jack"></div>
                     </div>
                     <div class="display-skill">
 
@@ -70,6 +83,8 @@
             </section>
         </main>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
